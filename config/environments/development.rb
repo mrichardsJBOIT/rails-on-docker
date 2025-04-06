@@ -72,4 +72,6 @@ Rails.application.configure do
 
   # Allow access when running in docker
   config.web_console.allowed_ips = [ "172.16.0.0/12", "192.168.0.0/16" ]
+
+  config.hosts << "default.lvh.me:3000"
 end
